@@ -1,0 +1,6 @@
+#vi `echo $1 | sed -e 's/:/ \+/'`
+vi `echo $1 |sed -e 's/:[^:]*$//g' |sed -e 's/:/ \+/'`
+
+#  EXAMPLE
+#/root/LAB/kernel/sched/core.c:2556:context_switch
+#                             +    ^^^^^^^^^^^^^^^ DELETE

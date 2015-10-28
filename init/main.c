@@ -510,7 +510,7 @@ static void __init mm_init(void)
 	ioremap_huge_init();
 }
 
-asmlinkage __visible void __init start_kernel(void)
+asmlinkage __visible void __init start_kernel(void)  //HKMR
 {
 
 	char *command_line;

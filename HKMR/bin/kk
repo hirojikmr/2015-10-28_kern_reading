@@ -1,0 +1,1 @@
+kill -KILL `ps ax | grep qemu | grep 10000 | sed -e "s/^ *//" | sed -e "s/ .*$//" `
