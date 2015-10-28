@@ -1,0 +1,252 @@
+boot_prams
+$4 = {screen_info = {orig_x = 0 '\000', orig_y = 0 '\000', ext_mem_k = 0, 
+    orig_video_page = 0, orig_video_mode = 0 '\000', 
+    orig_video_cols = 0 '\000', flags = 0 '\000', unused2 = 0 '\000', 
+    orig_video_ega_bx = 0, unused3 = 0, orig_video_lines = 0 '\000', 
+    orig_video_isVGA = 0 '\000', orig_video_points = 0, lfb_width = 0, 
+    lfb_height = 0, lfb_depth = 0, lfb_base = 0, lfb_size = 0, cl_magic = 0, 
+    cl_offset = 0, lfb_linelength = 0, red_size = 0 '\000', 
+    red_pos = 0 '\000', green_size = 0 '\000', green_pos = 0 '\000', 
+    blue_size = 0 '\000', blue_pos = 0 '\000', rsvd_size = 0 '\000', 
+    rsvd_pos = 0 '\000', vesapm_seg = 0, vesapm_off = 0, pages = 0, 
+    vesa_attributes = 0, capabilities = 0, 
+    _reserved = "\000\000\000\000\000"}, apm_bios_info = {version = 0, 
+    cseg = 0, offset = 0, cseg_16 = 0, dseg = 0, flags = 0, cseg_len = 0, 
+    cseg_16_len = 0, dseg_len = 0}, _pad2 = "\000\000\000", tboot_addr = 0, 
+  ist_info = {signature = 0, command = 0, event = 0, perf_level = 0}, 
+  _pad3 = '\000' <repeats 15 times>, hd0_info = '\000' <repeats 15 times>, 
+  hd1_info = '\000' <repeats 15 times>, sys_desc_table = {length = 0, 
+    table = '\000' <repeats 13 times>}, olpc_ofw_header = {ofw_magic = 0,   ofw_version = 0, cif_handler = 0, irq_desc_table = 0}, 
+  ext_ramdisk_image = 0, ext_ramdisk_size = 0, ext_cmd_line_ptr = 0, 
+  _pad4 = '\000' <repeats 115 times>, edid_info = {
+    dummy = '\000' <repeats 127 times>}, efi_info = {efi_loader_signature = 0, 
+    efi_systab = 0, efi_memdesc_size = 0, efi_memdesc_version = 0, 
+    efi_memmap = 0, efi_memmap_size = 0, efi_systab_hi = 0, 
+    efi_memmap_hi = 0}, alt_mem_k = 0, scratch = 0, e820_entries = 0 '\000', 
+  eddbuf_entries = 0 '\000', edd_mbr_sig_buf_entries = 0 '\000', 
+  kbd_status = 0 '\000', _pad5 = "\000\000", sentinel = 0 '\000', _pad6 = "", 
+  hdr = {setup_sects = 0 '\000', root_flags = 0, syssize = 0, ram_size = 0, 
+    vid_mode = 0, root_dev = 0, boot_flag = 0, jump = 0, header = 0, 
+    version = 0, realmode_swtch = 0, start_sys = 0, kernel_version = 0, 
+    type_of_loader = 0 '\000', loadflags = 0 '\000', setup_move_size = 0, 
+    code32_start = 0, ramdisk_image = 0, ramdisk_size = 0, 
+    bootsect_kludge = 0, heap_end_ptr = 0, ext_loader_ver = 0 '\000', 
+    ext_loader_type = 0 '\000', cmd_line_ptr = 0, initrd_addr_max = 0, 
+    kernel_alignment = 0, relocatable_kernel = 0 '\000', 
+    min_alignment = 0 '\000', xloadflags = 0, cmdline_size = 0, 
+ hardware_subarch = 0, hardware_subarch_data = 0, payload_offset = 0, 
+    payload_length = 0, setup_data = 0, pref_address = 0, init_size = 0, 
+    handover_offset = 0}, _pad7 = '\000' <repeats 39 times>, 
+  edd_mbr_sig_buffer = {0 <repeats 16 times>}, e820_map = {{addr = 0, 
+      size = 0, type = 0} <repeats 128 times>}, 
+  _pad8 = '\000' <repeats 47 times>, eddbuf = {{device = 0 '\000', 
+      version = 0 '\000', interface_support = 0, legacy_max_cylinder = 0, 
+      legacy_max_head = 0 '\000', legacy_sectors_per_track = 0 '\000', 
+      params = {length = 0, info_flags = 0, num_default_cylinders = 0, 
+        num_default_heads = 0, sectors_per_track = 0, number_of_sectors = 0, 
+        bytes_per_sector = 0, dpte_ptr = 0, key = 0, 
+        device_path_info_length = 0 '\000', reserved2 = 0 '\000', 
+        reserved3 = 0, host_bus_type = "\000\000\000", 
+        interface_type = "\000\000\000\000\000\000\000", interface_path = {
+          isa = {base_address = 0, reserved1 = 0, reserved2 = 0}, pci = {
+            bus = 0 '\000', slot = 0 '\000', function = 0 '\000', 
+            channel = 0 '\000', reserved = 0}, ibnd = {reserved = 0}, xprs = {
+            reserved = 0}, htpt = {reserved = 0}, unknown = {reserved = 0}},device_path = {ata = {device = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0, reserved3 = 0, reserved4 = 0}, atapi = {
+            device = 0 '\000', lun = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0 '\000', reserved3 = 0, reserved4 = 0}, scsi = {
+            id = 0, lun = 0, reserved1 = 0, reserved2 = 0}, usb = {
+            serial_number = 0, reserved = 0}, i1394 = {eui = 0, reserved = 0}, 
+          fibre = {wwid = 0, lun = 0}, i2o = {identity_tag = 0, reserved = 0}, 
+          raid = {array_number = 0, reserved1 = 0, reserved2 = 0}, sata = {
+            device = 0 '\000', reserved1 = 0 '\000', reserved2 = 0, 
+            reserved3 = 0, reserved4 = 0}, unknown = {reserved1 = 0, 
+            reserved2 = 0}}, reserved4 = 0 '\000', checksum = 0 '\000'}}, {
+      device = 0 '\000', version = 0 '\000', interface_support = 0, 
+      legacy_max_cylinder = 0, legacy_max_head = 0 '\000', 
+      legacy_sectors_per_track = 0 '\000', params = {length = 0, 
+        info_flags = 0, num_default_cylinders = 0, num_default_heads = 0, 
+        sectors_per_track = 0, number_of_sectors = 0, bytes_per_sector = 0, 
+        dpte_ptr = 0, key = 0, device_path_info_length = 0 '\000', 
+        reserved2 = 0 '\000', reserved3 = 0, host_bus_type = "\000\000\000",interface_type = "\000\000\000\000\000\000\000", interface_path = {
+          isa = {base_address = 0, reserved1 = 0, reserved2 = 0}, pci = {
+            bus = 0 '\000', slot = 0 '\000', function = 0 '\000', 
+            channel = 0 '\000', reserved = 0}, ibnd = {reserved = 0}, xprs = {
+            reserved = 0}, htpt = {reserved = 0}, unknown = {reserved = 0}}, 
+        device_path = {ata = {device = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0, reserved3 = 0, reserved4 = 0}, atapi = {
+            device = 0 '\000', lun = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0 '\000', reserved3 = 0, reserved4 = 0}, scsi = {
+            id = 0, lun = 0, reserved1 = 0, reserved2 = 0}, usb = {
+            serial_number = 0, reserved = 0}, i1394 = {eui = 0, reserved = 0}, 
+          fibre = {wwid = 0, lun = 0}, i2o = {identity_tag = 0, reserved = 0}, 
+          raid = {array_number = 0, reserved1 = 0, reserved2 = 0}, sata = {
+            device = 0 '\000', reserved1 = 0 '\000', reserved2 = 0, 
+            reserved3 = 0, reserved4 = 0}, unknown = {reserved1 = 0, 
+            reserved2 = 0}}, reserved4 = 0 '\000', checksum = 0 '\000'}}, {
+      device = 0 '\000', version = 0 '\000', interface_support = 0, 
+      legacy_max_cylinder = 0, legacy_max_head = 0 '\000', 
+legacy_sectors_per_track = 0 '\000', params = {length = 0, 
+        info_flags = 0, num_default_cylinders = 0, num_default_heads = 0, 
+        sectors_per_track = 0, number_of_sectors = 0, bytes_per_sector = 0, 
+        dpte_ptr = 0, key = 0, device_path_info_length = 0 '\000', 
+        reserved2 = 0 '\000', reserved3 = 0, host_bus_type = "\000\000\000", 
+        interface_type = "\000\000\000\000\000\000\000", interface_path = {
+          isa = {base_address = 0, reserved1 = 0, reserved2 = 0}, pci = {
+            bus = 0 '\000', slot = 0 '\000', function = 0 '\000', 
+            channel = 0 '\000', reserved = 0}, ibnd = {reserved = 0}, xprs = {
+            reserved = 0}, htpt = {reserved = 0}, unknown = {reserved = 0}}, 
+        device_path = {ata = {device = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0, reserved3 = 0, reserved4 = 0}, atapi = {
+            device = 0 '\000', lun = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0 '\000', reserved3 = 0, reserved4 = 0}, scsi = {
+            id = 0, lun = 0, reserved1 = 0, reserved2 = 0}, usb = {
+            serial_number = 0, reserved = 0}, i1394 = {eui = 0, reserved = 0}, 
+          fibre = {wwid = 0, lun = 0}, i2o = {identity_tag = 0, reserved = 0}, 
+          raid = {array_number = 0, reserved1 = 0, reserved2 = 0}, sata = {device = 0 '\000', reserved1 = 0 '\000', reserved2 = 0, 
+            reserved3 = 0, reserved4 = 0}, unknown = {reserved1 = 0, 
+            reserved2 = 0}}, reserved4 = 0 '\000', checksum = 0 '\000'}}, {
+      device = 0 '\000', version = 0 '\000', interface_support = 0, 
+      legacy_max_cylinder = 0, legacy_max_head = 0 '\000', 
+      legacy_sectors_per_track = 0 '\000', params = {length = 0, 
+        info_flags = 0, num_default_cylinders = 0, num_default_heads = 0, 
+        sectors_per_track = 0, number_of_sectors = 0, bytes_per_sector = 0, 
+        dpte_ptr = 0, key = 0, device_path_info_length = 0 '\000', 
+        reserved2 = 0 '\000', reserved3 = 0, host_bus_type = "\000\000\000", 
+        interface_type = "\000\000\000\000\000\000\000", interface_path = {
+          isa = {base_address = 0, reserved1 = 0, reserved2 = 0}, pci = {
+            bus = 0 '\000', slot = 0 '\000', function = 0 '\000', 
+            channel = 0 '\000', reserved = 0}, ibnd = {reserved = 0}, xprs = {
+            reserved = 0}, htpt = {reserved = 0}, unknown = {reserved = 0}}, 
+        device_path = {ata = {device = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0, reserved3 = 0, reserved4 = 0}, atapi = {
+            device = 0 '\000', lun = 0 '\000', reserved1 = 0 '\000', 
+reserved2 = 0 '\000', reserved3 = 0, reserved4 = 0}, scsi = {
+            id = 0, lun = 0, reserved1 = 0, reserved2 = 0}, usb = {
+            serial_number = 0, reserved = 0}, i1394 = {eui = 0, reserved = 0}, 
+          fibre = {wwid = 0, lun = 0}, i2o = {identity_tag = 0, reserved = 0}, 
+          raid = {array_number = 0, reserved1 = 0, reserved2 = 0}, sata = {
+            device = 0 '\000', reserved1 = 0 '\000', reserved2 = 0, 
+            reserved3 = 0, reserved4 = 0}, unknown = {reserved1 = 0, 
+            reserved2 = 0}}, reserved4 = 0 '\000', checksum = 0 '\000'}}, {
+      device = 0 '\000', version = 0 '\000', interface_support = 0, 
+      legacy_max_cylinder = 0, legacy_max_head = 0 '\000', 
+      legacy_sectors_per_track = 0 '\000', params = {length = 0, 
+        info_flags = 0, num_default_cylinders = 0, num_default_heads = 0, 
+        sectors_per_track = 0, number_of_sectors = 0, bytes_per_sector = 0, 
+        dpte_ptr = 0, key = 0, device_path_info_length = 0 '\000', 
+        reserved2 = 0 '\000', reserved3 = 0, host_bus_type = "\000\000\000", 
+        interface_type = "\000\000\000\000\000\000\000", interface_path = {
+          isa = {base_address = 0, reserved1 = 0, reserved2 = 0}, pci = {
+            bus = 0 '\000', slot = 0 '\000', function = 0 '\000', 
+ channel = 0 '\000', reserved = 0}, ibnd = {reserved = 0}, xprs = {
+            reserved = 0}, htpt = {reserved = 0}, unknown = {reserved = 0}}, 
+        device_path = {ata = {device = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0, reserved3 = 0, reserved4 = 0}, atapi = {
+            device = 0 '\000', lun = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0 '\000', reserved3 = 0, reserved4 = 0}, scsi = {
+            id = 0, lun = 0, reserved1 = 0, reserved2 = 0}, usb = {
+            serial_number = 0, reserved = 0}, i1394 = {eui = 0, reserved = 0}, 
+          fibre = {wwid = 0, lun = 0}, i2o = {identity_tag = 0, reserved = 0}, 
+          raid = {array_number = 0, reserved1 = 0, reserved2 = 0}, sata = {
+            device = 0 '\000', reserved1 = 0 '\000', reserved2 = 0, 
+            reserved3 = 0, reserved4 = 0}, unknown = {reserved1 = 0, 
+            reserved2 = 0}}, reserved4 = 0 '\000', checksum = 0 '\000'}}, {
+      device = 0 '\000', version = 0 '\000', interface_support = 0, 
+      legacy_max_cylinder = 0, legacy_max_head = 0 '\000', 
+      legacy_sectors_per_track = 0 '\000', params = {length = 0, 
+        info_flags = 0, num_default_cylinders = 0, num_default_heads = 0, 
+        sectors_per_track = 0, number_of_sectors = 0, bytes_per_sector = 0, 
+ dpte_ptr = 0, key = 0, device_path_info_length = 0 '\000', 
+        reserved2 = 0 '\000', reserved3 = 0, host_bus_type = "\000\000\000", 
+        interface_type = "\000\000\000\000\000\000\000", interface_path = {
+          isa = {base_address = 0, reserved1 = 0, reserved2 = 0}, pci = {
+            bus = 0 '\000', slot = 0 '\000', function = 0 '\000', 
+            channel = 0 '\000', reserved = 0}, ibnd = {reserved = 0}, xprs = {
+            reserved = 0}, htpt = {reserved = 0}, unknown = {reserved = 0}}, 
+        device_path = {ata = {device = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0, reserved3 = 0, reserved4 = 0}, atapi = {
+            device = 0 '\000', lun = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0 '\000', reserved3 = 0, reserved4 = 0}, scsi = {
+            id = 0, lun = 0, reserved1 = 0, reserved2 = 0}, usb = {
+            serial_number = 0, reserved = 0}, i1394 = {eui = 0, reserved = 0}, 
+          fibre = {wwid = 0, lun = 0}, i2o = {identity_tag = 0, reserved = 0}, 
+          raid = {array_number = 0, reserved1 = 0, reserved2 = 0}, sata = {
+            device = 0 '\000', reserved1 = 0 '\000', reserved2 = 0, 
+            reserved3 = 0, reserved4 = 0}, unknown = {reserved1 = 0, 
+            reserved2 = 0}}, reserved4 = 0 '\000', checksum = 0 '\000'}}}, 
+   reserved2 = 0 '\000', reserved3 = 0, host_bus_type = "\000\000\000", 
+        interface_type = "\000\000\000\000\000\000\000", interface_path = {
+          isa = {base_address = 0, reserved1 = 0, reserved2 = 0}, pci = {
+            bus = 0 '\000', slot = 0 '\000', function = 0 '\000', 
+            channel = 0 '\000', reserved = 0}, ibnd = {reserved = 0}, xprs = {
+            reserved = 0}, htpt = {reserved = 0}, unknown = {reserved = 0}}, 
+        device_path = {ata = {device = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0, reserved3 = 0, reserved4 = 0}, atapi = {
+            device = 0 '\000', lun = 0 '\000', reserved1 = 0 '\000', 
+            reserved2 = 0 '\000', reserved3 = 0, reserved4 = 0}, scsi = {
+            id = 0, lun = 0, reserved1 = 0, reserved2 = 0}, usb = {
+            serial_number = 0, reserved = 0}, i1394 = {eui = 0, reserved = 0}, 
+          fibre = {wwid = 0, lun = 0}, i2o = {identity_tag = 0, reserved = 0}, 
+          raid = {array_number = 0, reserved1 = 0, reserved2 = 0}, sata = {
+            device = 0 '\000', reserved1 = 0 '\000', reserved2 = 0, 
+            reserved3 = 0, reserved4 = 0}, unknown = {reserved1 = 0, 
+            reserved2 = 0}}, reserved4 = 0 '\000', checksum = 0 '\000'}}}, 
+  _pad9 = '\000' <repeats 275 times>}
+
+
+
+
+
+Program received signal SIGINT, Interrupt.
+0xc16fc5d3 in start_kernel () at init/main.c:498
+(gdb) i s
+#0  0xc16fc5d3 in start_kernel () at init/main.c:498
+                  ^^^^^^^^^^^^^^^^^^^===========
+#1  0xc16fc369 in i386_start_kernel () at arch/x86/kernel/head32.c:53
+                  ^^^^^^^^^^^^^^^^^^^^    ========================
+#2  0x00000000 in ?? ()
+(gdb) 
+
+
+
+(gdb) disassemble 0x61fc232
+No function contains specified address.
+(gdb) disassemble 0xc16fc232
+Dump of assembler code for function i386_start_kernel:
+   0xc16fc232 <+0>:     push   %ebp
+   0xc16fc233 <+1>:     mov    %esp,%ebp
+=> 0xc16fc235 <+3>:     jmp    0xc16fc235 <i386_start_kernel+3>
+End of assembler dump.
+(gdb) i s
+#0  0xc16fc235 in i386_start_kernel () at arch/x86/kernel/head32.c:33
+#1  0x00000000 in ?? ()
+
+
+
+
+(gdb) i r
+eax            0x100000 1048576
+ecx            0x0      0
+edx            0x0      0
+ebx            0x0      0
+esp            0x1ff6c  0x1ff6c
+ebp            0x0      0x0
+esi            0x14060  82016
+edi            0x0      0
+eip            0x12f42  0x12f42
+eflags         0x46     [ PF ZF ]
+cs             0x10     16
+ss             0x18     24
+ds             0x18     24
+es             0x18     24
+fs             0x18     24
+gs             0x18     24
+
+(gdb) 
+(gdb) p/x *$eax
+$8 = 0x1186f6fc
+(gdb) 
+
+
+

@@ -1,0 +1,81 @@
+カーネルの起動
+
+arch/x86/boot/headr.S
+
+   .global _start
+
+   calll main          <----------------------  boot/main.c
+
+
+arch/x86/boot/main.c
+   main() {
+
+   go_to_protected_mode();  <------------------ boot/pm.c
+
+
+arch/x86/boot/pm.c
+
+   go_to_protected_mode(void) {
+
+   protected_mode_jump(boot_prams.hdr.code32_start,.... <---- boot/pmjump.S
+
+arch/x86/boot/pmjump.S
+
+   GLOBAL(protected_mode_jump)
+
+   jmpl  *%eax  <------------------------  startup_32 in compress
+
+   NOTE:
+   boot/headr.S 
+   code32_start :
+              .long 0x100000 
+
+arc/x86/boot/compress/head_32.S
+
+   ENTRY(startup_32)
+   
+      call    decompress_kernel /* returns kernel location in %eax */
+      addl    $28, %esp
+
+      /*
+      * Jump to the decompressed kernel.
+      */
+      xorl    %ebx, %ebx
+
+      jmp     *%eax  <----------------------- startup_32 in kernel
+
+arc/x86/kernel/head_32.S
+
+   ENTRY(startup_32)
+
+    pushl $0                # fake return address for unwinder
+
+    jmp *(initial_code)  <-------------------- i386_start_kernel
+
+
+   NOTE:
+
+   __REFDATA
+        .align 4
+   ENTRY(initial_code)
+        .long i386_start_kernel
+
+  
+arch/x86/kernel/head32.c
+
+   asmlinkage __visible void __init i386_start_kernel(void)
+   {
+
+       start_kernel();  <---------------------- start_kernel
+
+init/main.c
+
+   start_kernel(){
+
+        if (!try_to_run_init_process("/sbin/init") ||
+            !try_to_run_init_process("/etc/init") ||
+            !try_to_run_init_process("/bin/init") ||
+            !try_to_run_init_process("/bin/sh"))
+                return 0;
+
+

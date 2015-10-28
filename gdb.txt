@@ -1,0 +1,293 @@
+$3 = {state = 0, stack = 0xc78b2000, usage = {counter = 2}, flags = 4210688, ptrace = 0, 
+  wake_entry = {next = 0x0}, on_cpu = 1, last_wakee = 0xc780e000, wakee_flips = 298, 
+  wakee_flip_decay_ts = 3718625, wake_cpu = 0, on_rq = 1, prio = 120, static_prio = 120, 
+  normal_prio = 120, rt_priority = 0, sched_class = 0xc1504f00 <fair_sched_class>, se = {
+    load = {weight = 1024, inv_weight = 4194304}, run_node = {__rb_parent_color = 1, 
+      rb_right = 0x0, rb_left = 0x0}, group_node = {next = 0xc7ef2f18, prev = 0xc78b8058}, 
+    on_rq = 1, exec_start = 4018672117432, sum_exec_runtime = 50756059, 
+    vruntime = 3854315935, prev_sum_exec_runtime = 40767556, nr_migrations = 0, statistics = {
+      wait_start = 0, wait_max = 2123408, wait_count = 15, wait_sum = 4372982, 
+      iowait_count = 0, iowait_sum = 0, sleep_start = 0, sleep_max = 0, 
+      sum_sleep_runtime = 0, block_start = 0, block_max = 0, exec_max = 2787348, 
+      slice_max = 0, nr_migrations_cold = 0, nr_failed_migrations_affine = 0, 
+      nr_failed_migrations_running = 0, nr_failed_migrations_hot = 0, 
+      nr_forced_migrations = 0, nr_wakeups = 0, nr_wakeups_sync = 0, nr_wakeups_migrate = 0, 
+      nr_wakeups_local = 0, nr_wakeups_remote = 0, nr_wakeups_affine = 0, 
+      nr_wakeups_affine_attempts = 0, nr_wakeups_passive = 0, nr_wakeups_idle = 0}, 
+    depth = 0, parent = 0x0, cfs_rq = 0xc7ef2a40, my_q = 0x0, avg = {
+      last_runnable_update = 4018672117432, decay_count = 0, load_avg_contrib = 1023, 
+      utilization_avg_contrib = 968, runnable_avg_sum = 32288, avg_period = 32288, 
+      running_avg_sum = 30573}}, rt = {run_list = {next = 0xc7963998, prev = 0xc7963998}, 
+    timeout = 0, watchdog_stamp = 0, time_slice = 100, back = 0x0}, 
+  sched_task_group = 0xc179c180 <root_task_group>, dl = {rb_node = {
+      __rb_parent_color = 3348511156, rb_right = 0x0, rb_left = 0x0}, dl_runtime = 0, 
+    dl_deadline = 0, dl_period = 0, dl_bw = 0, runtime = 0, deadline = 0, flags = 0, 
+    dl_throttled = 0, dl_new = 1, dl_boosted = 0, dl_yielded = 0, dl_timer = {node = {node = {
+          __rb_parent_color = 3348511236, rb_right = 0x0, rb_left = 0x0}, expires = {
+          tv64 = 0}}, _softexpires = {tv64 = 0}, function = 0xc107b820 <dl_task_timer>, 
+      base = 0xc7eed580, state = 0, start_pid = -1, start_site = 0x0, 
+      start_comm = '\000' <repeats 15 times>}}, btrace_seq = 0, policy = 0, 
+  nr_cpus_allowed = 1, cpus_allowed = {bits = {1}}, sched_info = {pcount = 15, 
+    run_delay = 4372982, last_arrival = 4018662128929, last_queued = 0}, tasks = {
+    next = 0xc169bcf0 <init_task+624>, prev = 0xc7960a70}, pushable_tasks = {prio = 140, 
+    prio_list = {next = 0xc7963a7c, prev = 0xc7963a7c}, node_list = {next = 0xc7963a84, 
+      prev = 0xc7963a84}}, pushable_dl_tasks = {__rb_parent_color = 3348511372, 
+    rb_right = 0x0, rb_left = 0x0}, mm = 0xc7b70e00, active_mm = 0xc7b70e00, 
+  vmacache_seqnum = 4, vmacache = {0x0, 0x0, 0x0, 0xc7b24108}, rss_stat = {events = 4, 
+    count = {47, 1, 0}}, exit_state = 0, exit_code = 0, exit_signal = 17, pdeath_signal = 0, 
+  jobctl = 0, personality = 0, in_execve = 0, in_iowait = 0, sched_reset_on_fork = 0, 
+  sched_contributes_to_load = 0, sched_migrated = 0, atomic_flags = 0, restart_block = {
+    fn = 0xc1055040 <do_no_restart_syscall>, {futex = {uaddr = 0x0, val = 0, flags = 0, 
+        bitset = 0, time = 0, uaddr2 = 0x0}, nanosleep = {clockid = 0, rmtp = 0x0, 
+        expires = 0}, poll = {ufds = 0x0, nfds = 0, has_timeout = 0, tv_sec = 0, 
+        tv_nsec = 0}}}, pid = 804, tgid = 804, real_parent = 0xc7960800, parent = 0xc7960800, 
+  children = {next = 0xc7963b14, prev = 0xc7963b14}, sibling = {next = 0xc7960b14, 
+    prev = 0xc7960b14}, group_leader = 0xc7963800, ptraced = {next = 0xc7963b28, 
+    prev = 0xc7963b28}, ptrace_entry = {next = 0xc7963b30, prev = 0xc7963b30}, pids = {{
+      node = {next = 0x0, pprev = 0xc7ae9148}, pid = 0xc7ae9140}, {node = {next = 0x0, 
+        pprev = 0xc7ae914c}, pid = 0xc7ae9140}, {node = {next = 0xc7960b50, 
+        pprev = 0xc7ba8e90}, pid = 0xc7ba8e80}}, thread_group = {next = 0xc7963b5c, 
+    prev = 0xc7963b5c}, thread_node = {next = 0xc78e090c, prev = 0xc78e090c}, 
+  vfork_done = 0x0, set_child_tid = 0xb75dc768, clear_child_tid = 0x0, utime = 9, stime = 41, 
+  utimescaled = 9, stimescaled = 41, gtime = 0, prev_cputime = {utime = 0, stime = 0}, 
+  nvcsw = 0, nivcsw = 14, start_time = 4018612291027, real_start_time = 4018612333092, 
+  min_flt = 67, maj_flt = 0, cputime_expires = {utime = 0, stime = 0, sum_exec_runtime = 0}, 
+  cpu_timers = {{next = 0xc7963bc4, prev = 0xc7963bc4}, {next = 0xc7963bcc, 
+      prev = 0xc7963bcc}, {next = 0xc7963bd4, prev = 0xc7963bd4}}, real_cred = 0xc7b82c00, 
+  cred = 0xc7b82c00, comm = "a.out\000n\000\060\000\000\000\000\000\000", nameidata = 0x0, 
+  sysvsem = {undo_list = 0x0}, sysvshm = {shm_clist = {next = 0xc7963bfc, 
+      prev = 0xc7963bfc}}, fs = 0xc7ae9c40, files = 0xc002f700, 
+  nsproxy = 0xc16ab8a4 <init_nsproxy>, signal = 0xc78e0900, sighand = 0xc7b7ca40, blocked = {
+    sig = {0, 0}}, real_blocked = {sig = {0, 0}}, saved_sigmask = {sig = {0, 0}}, pending = {
+    list = {next = 0xc7963c30, prev = 0xc7963c30}, signal = {sig = {0, 0}}}, sas_ss_sp = 0, 
+  sas_ss_size = 0, notifier = 0x0, notifier_data = 0x0, notifier_mask = 0x0, 
+  task_works = 0x0, audit_context = 0x0, seccomp = {mode = 0, filter = 0x0}, 
+  parent_exec_id = 4, self_exec_id = 5, alloc_lock = {{rlock = {raw_lock = {val = {
+            counter = 0}}}}}, pi_lock = {raw_lock = {val = {counter = 0}}}, wake_q = {
+    next = 0x0}, pi_waiters = {rb_node = 0x0}, pi_waiters_leftmost = 0x0, 
+  pi_blocked_on = 0x0, journal_info = 0x0, bio_list = 0x0, plug = 0x0, reclaim_state = 0x0, 
+  backing_dev_info = 0x0, io_context = 0x0, ptrace_message = 0, last_siginfo = 0x0, 
+  ioac = {<No data fields>}, mems_allowed = {bits = {1}}, mems_allowed_seq = {sequence = 0}, 
+  cpuset_mem_spread_rotor = -1, cpuset_slab_spread_rotor = -1, 
+  cgroups = 0xc16b1820 <init_css_set>, cg_list = {next = 0xc7963cb8, prev = 0xc7963cb8}, 
+  robust_list = 0x0, pi_state_list = {next = 0xc7963cc4, prev = 0xc7963cc4}, 
+  pi_state_cache = 0x0, perf_event_ctxp = {0x0, 0x0}, perf_event_mutex = {count = {
+      counter = 1}, wait_lock = {{rlock = {raw_lock = {val = {counter = 0}}}}}, wait_list = {
+      next = 0xc7963ce0, prev = 0xc7963ce0}, owner = 0x0, osq = {tail = {counter = 0}}}, 
+  perf_event_list = {next = 0xc7963cf0, prev = 0xc7963cf0}, rcu = {next = 0x0, func = 0x0}, 
+  splice_pipe = 0x0, task_frag = {page = 0x0, offset = 0, size = 0}, nr_dirtied = 0, 
+  nr_dirtied_pause = 32, dirty_paused_when = 0, timer_slack_ns = 50000, 
+  default_timer_slack_ns = 50000, trace = 0, trace_recursion = 0, pagefault_disabled = 0, 
+  thread = {tls_array = {{{{a = 3108044799, b = 3084907094}, {limit0 = 65535, base0 = 47424, 
+            base1 = 86, type = 2, s = 1, dpl = 3, p = 1, limit = 15, avl = 1, l = 0, d = 1, 
+            g = 1, base2 = 183}}}, {{{a = 0, b = 0}, {limit0 = 0, base0 = 0, base1 = 0, 
+            type = 0, s = 0, dpl = 0, p = 0, limit = 0, avl = 0, l = 0, d = 0, g = 0, 
+            base2 = 0}}}, {{{a = 0, b = 0}, {limit0 = 0, base0 = 0, base1 = 0, type = 0, 
+            s = 0, dpl = 0, p = 0, limit = 0, avl = 0, l = 0, d = 0, g = 0, base2 = 0}}}}, 
+    sp0 = 3347791864, sp = 3347791712, sysenter_cs = 96, ip = 3243215611, gs = 51, 
+    ptrace_bps = {0x0, 0x0, 0x0, 0x0}, debugreg6 = 0, ptrace_dr7 = 0, cr2 = 0, trap_nr = 0, 
+    error_code = 0, vm86_info = 0x0, screen_bitmap = 0, v86flags = 0, v86mask = 0, 
+    saved_sp0 = 0, saved_fs = 0, saved_gs = 0, io_bitmap_ptr = 0x0, iopl = 0, 
+    io_bitmap_max = 0, fpu = {last_cpu = 4294967295, fpstate_active = 0 '\000', 
+      fpregs_active = 0 '\000', counter = 0 '\000', state = {fsave = {cwd = 895, swd = 0, 
+          twd = 0, fip = 0, fcs = 0, foo = 0, fos = 8064, st_space = {65535, 0, 0, 0, 
+            154245576, 0, 0, 0, 16, 0, 0, 0, 154267176, 0, 0, 0, 32, 0, 0, 0}, 
+          status = 154272488}, fxsave = {cwd = 895, swd = 0, twd = 0, fop = 0, {{rip = 0, 
+              rdp = 0}, {fip = 0, fcs = 0, foo = 0, fos = 0}}, mxcsr = 8064, 
+          mxcsr_mask = 65535, st_space = {0, 0, 0, 154245576, 0, 0, 0, 16, 0, 0, 0, 
+            154267176, 0, 0, 0, 32, 0, 0, 0, 154272488, 0, 0, 0, 134877106, 0, 0, 3217358848, 
+            3076569339, 0, 0, 0, 134708493}, xmm_space = {0, 4278190080, 4294967040, 0, 
+            778121006, 7632239, 8, 3486502863, 0, 4294967040, 0, 4278190080, 0, 0, 0, 0, 
+            2106210, 3755991007, 3755991007, 3755991007, 2020635438, 993013821, 708458035, 
+            1886615598, 808467814, 976630587, 336128, 0, 0, 0, 0, 0, 803, 0, 3217377392, 
+            3076569339, 135267045, 154223720, 0, 0, 0, 0, 154233800, 134735273, 0, 135262164, 
+            154291464, 134735340, 135262164, 154233800, 0, 134778422, 0, 0, 3217377648, 
+            154273800, 3, 135264420, 2500, 134864358, 4, 0, 1, 0}, padding = {0, 3217377216, 
+            80, 3217377322, 2, 135353143, 50, 134976876, 2, 135353143, 50, 134732490}, {
+            padding1 = {0 <repeats 12 times>}, sw_reserved = {0 <repeats 12 times>}}}, 
+        soft = {cwd = 895, swd = 0, twd = 0, fip = 0, fcs = 0, foo = 0, fos = 8064, 
+          st_space = {65535, 0, 0, 0, 154245576, 0, 0, 0, 16, 0, 0, 0, 154267176, 0, 0, 0, 
+            32, 0, 0, 0}, ftop = 232 '\350', changed = 2 '\002', lookahead = 50 '2', 
+          no_update = 9 '\t', rm = 0 '\000', alimit = 0 '\000', info = 0x0, entry_eip = 0}, 
+        xsave = {i387 = {cwd = 895, swd = 0, twd = 0, fop = 0, {{rip = 0, rdp = 0}, {fip = 0, 
+                fcs = 0, foo = 0, fos = 0}}, mxcsr = 8064, mxcsr_mask = 65535, st_space = {0, 
+              0, 0, 154245576, 0, 0, 0, 16, 0, 0, 0, 154267176, 0, 0, 0, 32, 0, 0, 0, 
+              154272488, 0, 0, 0, 134877106, 0, 0, 3217358848, 3076569339, 0, 0, 0, 
+              134708493}, xmm_space = {0, 4278190080, 4294967040, 0, 778121006, 7632239, 8, 
+              3486502863, 0, 4294967040, 0, 4278190080, 0, 0, 0, 0, 2106210, 3755991007, 
+              3755991007, 3755991007, 2020635438, 993013821, 708458035, 1886615598, 
+              808467814, 976630587, 336128, 0, 0, 0, 0, 0, 803, 0, 3217377392, 3076569339, 
+              135267045, 154223720, 0, 0, 0, 0, 154233800, 134735273, 0, 135262164, 
+              154291464, 134735340, 135262164, 154233800, 0, 134778422, 0, 0, 3217377648, 
+              154273800, 3, 135264420, 2500, 134864358, 4, 0, 1, 0}, padding = {0, 
+              3217377216, 80, 3217377322, 2, 135353143, 50, 134976876, 2, 135353143, 50, 
+              134732490}, {padding1 = {0 <repeats 12 times>}, sw_reserved = {
+                0 <repeats 12 times>}}}, header = {xfeatures = 3348514048, xcomp_bv = 0, 
+            reserved = {13835058057429647360, 0, 1470918301, 0, 0, 0}}, 
+          __reserved = '\000' <repeats 463 times>}, 
+        __padding = "\177\003", '\000' <repeats 22 times>, "\200\037\000\000\377\377", '\000' <repeats 14 times>, "ș1\t", '\000' <repeats 12 times>, "\020", '\000' <repeats 15 times>, "(\356\061\t", '\000' <repeats 12 times>, " ", '\000' <repeats 15 times>, "\350\002\062\t", '\000' <repeats 12 times>, "\262\017\n\b\000\000\000\000\000\000\000\000\000\000ſ\373\270`\267", '\000' <repeats 12 times>, "\r}\a\b\000\000\000\000\000\000\000\377\000\377\377\377\000\000\000\000./a.out\000\b\000\000\000\317\317\317\317\000\000\000\000\000\377\377\377\000\000\000\000\000\000\000"...}}}}
+Breakpoint 6 at 0xc10653c0: file kernel/sched/core.c, line 323.
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+0x080483fa in ?? ()
+Function "task_tick" not defined.
+Make breakpoint pending on future shared library load? (y or n) Undefined command: "".  Try "help".
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0xc16fc808 in start_kernel at init/main.c:514
+4       breakpoint     keep y   0xc1000ea0 in sys_hkmr at hkmrsyscall/hkmrsyscall.c:12
+	breakpoint already hit 1 time
+5       breakpoint     keep y   0xc1000ee6 in sys_hkmr at hkmrsyscall/hkmrsyscall.c:23
+	breakpoint already hit 1 time
+6       breakpoint     keep y   0xc10653c0 in hrtick at kernel/sched/core.c:323
+Function "schecule_tick" not defined.
+Make breakpoint pending on future shared library load? (y or n) Breakpoint 7 at 0xc106a950: file kernel/sched/core.c, line 2752.
+Continuing.
+
+Breakpoint 7, scheduler_tick () at kernel/sched/core.c:2752
+Quit
+A debugging session is active.
+
+	Inferior 1 [Remote target] will be killed.
+
+Quit anyway? (y or n) Continuing.
+
+Breakpoint 13, atkbd_cleanup (serio=0xc008a400) at drivers/input/keyboard/atkbd.c:882
+Continuing.
+
+Breakpoint 1, start_kernel () at init/main.c:514
+Continuing.
+
+Breakpoint 34, atkbd_init () at drivers/input/keyboard/atkbd.c:1809
+Continuing.
+
+Breakpoint 17, atkbd_connect (serio=0xc0020400, drv=0xc16e3600 <atkbd_drv>) at drivers/input/keyboard/atkbd.c:1134
+Continuing.
+
+Breakpoint 10, atkbd_probe (atkbd=0xc7ac8800) at drivers/input/keyboard/atkbd.c:725
+Continuing.
+
+Breakpoint 9, atkbd_probe (atkbd=0xc7ac8800) at drivers/input/keyboard/atkbd.c:780
+Continuing.
+
+Breakpoint 11, atkbd_select_set (atkbd=0xc7ac8800, target_set=2, allow_extra=0) at drivers/input/keyboard/atkbd.c:792
+Continuing.
+
+Breakpoint 12, atkbd_reset_state (atkbd=0xc7ac8800) at drivers/input/keyboard/atkbd.c:853
+Continuing.
+
+Breakpoint 15, atkbd_set_keycode_table (atkbd=0xc7ac8800) at drivers/input/keyboard/atkbd.c:1005
+Continuing.
+
+Breakpoint 16, atkbd_set_device_attrs (atkbd=0xc7ac8800) at drivers/input/keyboard/atkbd.c:1058
+Continuing.
+
+Breakpoint 8, atkbd_activate (atkbd=0xc7ac8800) at drivers/input/keyboard/atkbd.c:688
+Continuing.
+
+Breakpoint 17, atkbd_connect (serio=0xc0020000, drv=0xc16e3600 <atkbd_drv>) at drivers/input/keyboard/atkbd.c:1134
+Continuing.
+
+Breakpoint 10, atkbd_probe (atkbd=0xc78fa000) at drivers/input/keyboard/atkbd.c:725
+Continuing.
+
+Breakpoint 13, atkbd_cleanup (serio=0xc0020400) at drivers/input/keyboard/atkbd.c:882
+Continuing.
+
+Breakpoint 1, start_kernel () at init/main.c:514
+Continuing.
+
+Breakpoint 34, atkbd_init () at drivers/input/keyboard/atkbd.c:1809
+do_one_initcall (fn=0xc1736681 <atkbd_init>) at init/main.c:826
+Continuing.
+
+Breakpoint 17, atkbd_connect (serio=0xc79fa400, drv=0xc16e3600 <atkbd_drv>) at drivers/input/keyboard/atkbd.c:1134
+
+Breakpoint 10, atkbd_probe (atkbd=0xc7ad5000) at drivers/input/keyboard/atkbd.c:725
+
+Breakpoint 9, atkbd_probe (atkbd=0xc7ad5000) at drivers/input/keyboard/atkbd.c:780
+atkbd_connect (serio=0xc79fa400, drv=<optimized out>) at drivers/input/keyboard/atkbd.c:1181
+
+Breakpoint 11, atkbd_select_set (atkbd=0xc7ad5000, target_set=2, allow_extra=0) at drivers/input/keyboard/atkbd.c:792
+atkbd_connect (serio=0xc79fa400, drv=<optimized out>) at drivers/input/keyboard/atkbd.c:1182
+
+Breakpoint 12, atkbd_reset_state (atkbd=0xc7ad5000) at drivers/input/keyboard/atkbd.c:853
+atkbd_connect (serio=0xc79fa400, drv=<optimized out>) at drivers/input/keyboard/atkbd.c:1189
+
+Breakpoint 15, atkbd_set_keycode_table (atkbd=0xc7ad5000) at drivers/input/keyboard/atkbd.c:1005
+Continuing.
+
+Breakpoint 16, atkbd_set_device_attrs (atkbd=0xc7ad5000) at drivers/input/keyboard/atkbd.c:1058
+Continuing.
+
+Breakpoint 8, atkbd_activate (atkbd=0xc7ad5000) at drivers/input/keyboard/atkbd.c:688
+Continuing.
+
+Breakpoint 17, atkbd_connect (serio=0xc79fa000, drv=0xc16e3600 <atkbd_drv>) at drivers/input/keyboard/atkbd.c:1134
+Continuing.
+
+Breakpoint 10, atkbd_probe (atkbd=0xc78f8000) at drivers/input/keyboard/atkbd.c:725
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+default_idle () at arch/x86/kernel/process.c:303
+Function "putconxy" not defined.
+Make breakpoint pending on future shared library load? (y or n) Breakpoint 37 at 0xc12ed580: file drivers/tty/vt/vt.c, line 4510.
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+default_idle () at arch/x86/kernel/process.c:303
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+default_idle () at arch/x86/kernel/process.c:303
+Note: breakpoint 5 also set at pc 0xc144d380.
+Breakpoint 38 at 0xc144d380: file drivers/input/keyboard/atkbd.c, line 560.
+Continuing.
+
+Breakpoint 13, atkbd_cleanup (serio=0xc79fa400) at drivers/input/keyboard/atkbd.c:882
+Continuing.
+
+Breakpoint 1, start_kernel () at init/main.c:514
+Continuing.
+
+Breakpoint 34, atkbd_init () at drivers/input/keyboard/atkbd.c:1809
+Continuing.
+
+Breakpoint 17, atkbd_connect (serio=0xc0024400, drv=0xc16e3600 <atkbd_drv>) at drivers/input/keyboard/atkbd.c:1134
+Continuing.
+
+Breakpoint 10, atkbd_probe (atkbd=0xc78f9000) at drivers/input/keyboard/atkbd.c:725
+Continuing.
+
+Breakpoint 9, atkbd_probe (atkbd=0xc78f9000) at drivers/input/keyboard/atkbd.c:780
+Continuing.
+
+Breakpoint 11, atkbd_select_set (atkbd=0xc78f9000, target_set=2, allow_extra=0) at drivers/input/keyboard/atkbd.c:792
+Continuing.
+
+Breakpoint 12, atkbd_reset_state (atkbd=0xc78f9000) at drivers/input/keyboard/atkbd.c:853
+Continuing.
+
+Breakpoint 15, atkbd_set_keycode_table (atkbd=0xc78f9000) at drivers/input/keyboard/atkbd.c:1005
+Continuing.
+
+Breakpoint 16, atkbd_set_device_attrs (atkbd=0xc78f9000) at drivers/input/keyboard/atkbd.c:1058
+Continuing.
+
+Breakpoint 8, atkbd_activate (atkbd=0xc78f9000) at drivers/input/keyboard/atkbd.c:688
+Continuing.
+
+Breakpoint 17, atkbd_connect (serio=0xc0024000, drv=0xc16e3600 <atkbd_drv>) at drivers/input/keyboard/atkbd.c:1134
+Continuing.
+
+Breakpoint 10, atkbd_probe (atkbd=0xc78de800) at drivers/input/keyboard/atkbd.c:725
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+default_idle () at arch/x86/kernel/process.c:303
+A debugging session is active.
+
+	Inferior 1 [Remote target] will be killed.
+
+Quit anyway? (y or n) 
