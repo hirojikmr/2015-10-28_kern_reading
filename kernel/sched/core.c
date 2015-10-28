@@ -2765,11 +2765,6 @@ void scheduler_tick(void)
 
 	sched_clock_tick();
 
-	//HKMR
-	if(hkmr>0){
-		hkmr--;
-		printk("RUNNABLES = %d CURRENT PID=%d mm=%X\n", rq->nr_running, rq->curr->pid, rq->curr->mm);
-	}
 
 	//HKMR tick 
 /*
@@ -2782,6 +2777,13 @@ void scheduler_tick(void)
 	}
 	i++;
 */
+	//HKMR
+	if(hkmr>0){
+	  	hkmr--;
+		printk("RUNNABLES = %d CURRENT PID=%d mm=%X\n", rq->nr_running, rq->curr->pid, rq->curr->mm);
+                                                     //rq->nr_running  <------- NUM OF RUNNING PROCESSES
+                                                     // THERE ARE TASK_RUNNING state tasks, but one is current.
+	}
 
 
 	raw_spin_lock(&rq->lock);// LOCK

@@ -48,7 +48,7 @@ extern struct console *console_drivers;
 
 
 
-asmlinkage long sys_hkmr(int k){
+asmlinkage long sys_hkmr(int k){  // HKMR'S OWN SYS CALL
 
 	struct task_struct *task;
 

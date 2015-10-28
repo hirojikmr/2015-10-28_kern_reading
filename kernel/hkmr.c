@@ -1,2 +1,2 @@
 //HKMR
-int hkmr=0;
+int hkmr=-1;
